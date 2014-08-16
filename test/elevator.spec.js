@@ -5,10 +5,10 @@ var elevator = require('./../elevator.js');
 describe('An Elevator in a Home', function () {
   it('should exist', function () {
     // make sure the function in present and returns a truthy value.
-    var doesElevatorExist = elevator.goto();
+    var doesElevatorExist = elevator.goto;
 
     expect(doesElevatorExist).to.not.be.undefined;
-    expect(doesElevatorExist).to.be.ok;
+    expect(doesElevatorExist).to.a.instanceOf(Function);
 
   });
 
