@@ -88,14 +88,12 @@ describe('An Elevator in a Home', function () {
     it('should only accept a number as the first parameter', function () {
       var ride = elevator.goto('0', '3');
 
-      expect(ride).to.not.be.a('string');
       expect(ride).to.equal(0);
     });
 
     it('should only accept a string as the second parameter', function () {
       var ride = elevator.goto(2, 1);
 
-      expect(ride).to.not.be.a('number');
       expect(ride).to.equal(0);
     });
 
