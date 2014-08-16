@@ -1,4 +1,4 @@
-
+/*jslint node: true */
 'use strict';
 
 var gulp = require('gulp');
@@ -16,6 +16,6 @@ gulp.task('watch-mocha', function () {
   gulp.watch(['./**.js', 'test/*.spec.js'], ['mocha']);
 });
 
-gulp.task('dev', function () {
-  gulp.start('watch-coffee', 'watch-mocha');
+gulp.task('default', function () {
+  gulp.start('mocha', 'watch-mocha');
 });
