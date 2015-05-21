@@ -1,20 +1,17 @@
 {
   "name": "house-elevator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a devleague exercise",
   "main": "elevator.js",
   "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^1.9.1",
-    "gulp": "^3.8.5",
-    "gulp-mocha": "^0.4.1",
-    "gulp-util": "^2.2.19",
-    "gulp-watch": "^0.6.8"
+  "dependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
   },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec --bail --watch"
   },
-  "author": "rayrfarias@gmail.com",
-  "license": "ISC"
+  "author": "Dev League LLC",
+  "license": "MIT"
 }
