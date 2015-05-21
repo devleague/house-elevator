@@ -16,5 +16,6 @@ We cannot endanger the lives of our passengers, so if we get erronous inputs, ou
 1. Fork this repo and clone it from your github page onto your computer.
 1. To retrieve all dependecies, run the command:  `npm install`
 1. Do your work in the `elevator.js` file
+1. Run your tests with the command: `npm test`
 1. Commit each time you pass a test
 1. Make all the tests pass
